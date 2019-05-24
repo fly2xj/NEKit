@@ -28,7 +28,7 @@ public enum CryptoAlgorithm: String {
     AES256GCM = "AES-256-GCM",
     CHACHA20POLY1305 = "CHACHA20-IETF-POLY1305"
 
-    var isAead: Bool {
+    public var isAead: Bool {
         switch self {
         case .AES128GCM, .AES192GCM, .AES256GCM:
             return true
